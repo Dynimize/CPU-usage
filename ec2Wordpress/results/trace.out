@@ -1,0 +1,75 @@
++ measureTime=600
++ marginTime=15
++ warmupTime=600
++ restTime=10
++ results=./results/
++ cmd='--rps 80 -c 8 http://127.0.0.1/blog/'
++ measureTime=630
++ dyni -stop
+Dynimize is not running
++ mkdir -p ./results/
++ runAndPlot
++ echo RUN WITH DYNIMIZE
+RUN WITH DYNIMIZE
++ service mysql restart
++ dyni -start
+Dynimize started
++ warmup
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is running
++ loadtest -t 600 --rps 80 -c 8 http://127.0.0.1/blog/
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is running
+mysqld, pid: 10161, dynimized
++ dyni -stop
+Dynimize shutting down
++ run dyni
++ prefix=dyni-wp
++ topLog=./results/dyni-wp-top.log
++ loadtestLog=./results/dyni-wp.log
++ cpuUsageCsv=./results/dyni-wp.csv
++ sleep 10
++ loadtest -t 600 --rps 80 -c 8 http://127.0.0.1/blog/
++ timeout 630 top -b -d 1
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/dyni-wp-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/dyni-wp-top.log
++ sleep 10
++ echo RUN WITHOUT DYNIMIZE
+RUN WITHOUT DYNIMIZE
++ service mysql restart
++ warmup
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is not running
++ loadtest -t 600 --rps 80 -c 8 http://127.0.0.1/blog/
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is not running
++ run noDyni
++ prefix=noDyni-wp
++ topLog=./results/noDyni-wp-top.log
++ loadtestLog=./results/noDyni-wp.log
++ cpuUsageCsv=./results/noDyni-wp.csv
++ sleep 10
++ timeout 630 top -b -d 1
++ loadtest -t 600 --rps 80 -c 8 http://127.0.0.1/blog/
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/noDyni-wp-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/noDyni-wp-top.log
++ echo FINISHED
+FINISHED

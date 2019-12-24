@@ -1,0 +1,139 @@
+[Fri Nov 22 2019 21:17:12 GMT+0000 (UTC)] INFO Requests: 0, requests per second: 0, mean latency: 0 ms
+[Fri Nov 22 2019 21:17:17 GMT+0000 (UTC)] INFO Requests: 371, requests per second: 74, mean latency: 88 ms
+[Fri Nov 22 2019 21:17:22 GMT+0000 (UTC)] INFO Requests: 771, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:17:27 GMT+0000 (UTC)] INFO Requests: 1171, requests per second: 80, mean latency: 92.6 ms
+[Fri Nov 22 2019 21:17:32 GMT+0000 (UTC)] INFO Requests: 1572, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:17:37 GMT+0000 (UTC)] INFO Requests: 1971, requests per second: 80, mean latency: 88.2 ms
+[Fri Nov 22 2019 21:17:42 GMT+0000 (UTC)] INFO Requests: 2371, requests per second: 80, mean latency: 88.2 ms
+[Fri Nov 22 2019 21:17:47 GMT+0000 (UTC)] INFO Requests: 2771, requests per second: 80, mean latency: 88.5 ms
+[Fri Nov 22 2019 21:17:52 GMT+0000 (UTC)] INFO Requests: 3171, requests per second: 80, mean latency: 90.8 ms
+[Fri Nov 22 2019 21:17:57 GMT+0000 (UTC)] INFO Requests: 3571, requests per second: 80, mean latency: 89.5 ms
+[Fri Nov 22 2019 21:18:02 GMT+0000 (UTC)] INFO Requests: 3972, requests per second: 80, mean latency: 87.4 ms
+[Fri Nov 22 2019 21:18:07 GMT+0000 (UTC)] INFO Requests: 4372, requests per second: 80, mean latency: 87.7 ms
+[Fri Nov 22 2019 21:18:12 GMT+0000 (UTC)] INFO Requests: 4771, requests per second: 80, mean latency: 88.9 ms
+[Fri Nov 22 2019 21:18:17 GMT+0000 (UTC)] INFO Requests: 5171, requests per second: 80, mean latency: 90.8 ms
+[Fri Nov 22 2019 21:18:22 GMT+0000 (UTC)] INFO Requests: 5571, requests per second: 80, mean latency: 90.1 ms
+[Fri Nov 22 2019 21:18:27 GMT+0000 (UTC)] INFO Requests: 5971, requests per second: 80, mean latency: 90.1 ms
+[Fri Nov 22 2019 21:18:32 GMT+0000 (UTC)] INFO Requests: 6371, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:18:37 GMT+0000 (UTC)] INFO Requests: 6771, requests per second: 80, mean latency: 89.9 ms
+[Fri Nov 22 2019 21:18:42 GMT+0000 (UTC)] INFO Requests: 7171, requests per second: 80, mean latency: 90.6 ms
+[Fri Nov 22 2019 21:18:47 GMT+0000 (UTC)] INFO Requests: 7571, requests per second: 80, mean latency: 91.1 ms
+[Fri Nov 22 2019 21:18:52 GMT+0000 (UTC)] INFO Requests: 7972, requests per second: 80, mean latency: 88.4 ms
+[Fri Nov 22 2019 21:18:57 GMT+0000 (UTC)] INFO Requests: 8371, requests per second: 80, mean latency: 88.9 ms
+[Fri Nov 22 2019 21:19:02 GMT+0000 (UTC)] INFO Requests: 8771, requests per second: 80, mean latency: 86.8 ms
+[Fri Nov 22 2019 21:19:07 GMT+0000 (UTC)] INFO Requests: 9171, requests per second: 80, mean latency: 89.5 ms
+[Fri Nov 22 2019 21:19:12 GMT+0000 (UTC)] INFO Requests: 9571, requests per second: 80, mean latency: 90.7 ms
+[Fri Nov 22 2019 21:19:17 GMT+0000 (UTC)] INFO Requests: 9971, requests per second: 80, mean latency: 90.7 ms
+[Fri Nov 22 2019 21:19:22 GMT+0000 (UTC)] INFO Requests: 10371, requests per second: 80, mean latency: 89.2 ms
+[Fri Nov 22 2019 21:19:27 GMT+0000 (UTC)] INFO Requests: 10771, requests per second: 80, mean latency: 86.7 ms
+[Fri Nov 22 2019 21:19:32 GMT+0000 (UTC)] INFO Requests: 11171, requests per second: 80, mean latency: 89.1 ms
+[Fri Nov 22 2019 21:19:37 GMT+0000 (UTC)] INFO Requests: 11572, requests per second: 80, mean latency: 89.1 ms
+[Fri Nov 22 2019 21:19:42 GMT+0000 (UTC)] INFO Requests: 11972, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:19:47 GMT+0000 (UTC)] INFO Requests: 12372, requests per second: 80, mean latency: 87.1 ms
+[Fri Nov 22 2019 21:19:52 GMT+0000 (UTC)] INFO Requests: 12771, requests per second: 80, mean latency: 87.2 ms
+[Fri Nov 22 2019 21:19:57 GMT+0000 (UTC)] INFO Requests: 13171, requests per second: 80, mean latency: 87.2 ms
+[Fri Nov 22 2019 21:20:02 GMT+0000 (UTC)] INFO Requests: 13571, requests per second: 80, mean latency: 88.4 ms
+[Fri Nov 22 2019 21:20:07 GMT+0000 (UTC)] INFO Requests: 13971, requests per second: 80, mean latency: 88.4 ms
+[Fri Nov 22 2019 21:20:12 GMT+0000 (UTC)] INFO Requests: 14371, requests per second: 80, mean latency: 89.3 ms
+[Fri Nov 22 2019 21:20:17 GMT+0000 (UTC)] INFO Requests: 14771, requests per second: 80, mean latency: 87.4 ms
+[Fri Nov 22 2019 21:20:22 GMT+0000 (UTC)] INFO Requests: 15171, requests per second: 80, mean latency: 89.7 ms
+[Fri Nov 22 2019 21:20:27 GMT+0000 (UTC)] INFO Requests: 15571, requests per second: 80, mean latency: 89.2 ms
+[Fri Nov 22 2019 21:20:32 GMT+0000 (UTC)] INFO Requests: 15971, requests per second: 80, mean latency: 90.9 ms
+[Fri Nov 22 2019 21:20:37 GMT+0000 (UTC)] INFO Requests: 16371, requests per second: 80, mean latency: 89.3 ms
+[Fri Nov 22 2019 21:20:42 GMT+0000 (UTC)] INFO Requests: 16771, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:20:47 GMT+0000 (UTC)] INFO Requests: 17171, requests per second: 80, mean latency: 88.3 ms
+[Fri Nov 22 2019 21:20:52 GMT+0000 (UTC)] INFO Requests: 17571, requests per second: 80, mean latency: 87.2 ms
+[Fri Nov 22 2019 21:20:57 GMT+0000 (UTC)] INFO Requests: 17971, requests per second: 80, mean latency: 87.2 ms
+[Fri Nov 22 2019 21:21:02 GMT+0000 (UTC)] INFO Requests: 18371, requests per second: 80, mean latency: 87.1 ms
+[Fri Nov 22 2019 21:21:07 GMT+0000 (UTC)] INFO Requests: 18771, requests per second: 80, mean latency: 87.7 ms
+[Fri Nov 22 2019 21:21:12 GMT+0000 (UTC)] INFO Requests: 19171, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:21:17 GMT+0000 (UTC)] INFO Requests: 19572, requests per second: 80, mean latency: 89.1 ms
+[Fri Nov 22 2019 21:21:22 GMT+0000 (UTC)] INFO Requests: 19971, requests per second: 80, mean latency: 88.9 ms
+[Fri Nov 22 2019 21:21:27 GMT+0000 (UTC)] INFO Requests: 20371, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:21:32 GMT+0000 (UTC)] INFO Requests: 20771, requests per second: 80, mean latency: 90 ms
+[Fri Nov 22 2019 21:21:37 GMT+0000 (UTC)] INFO Requests: 21171, requests per second: 80, mean latency: 88.1 ms
+[Fri Nov 22 2019 21:21:42 GMT+0000 (UTC)] INFO Requests: 21571, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:21:47 GMT+0000 (UTC)] INFO Requests: 21972, requests per second: 80, mean latency: 88.2 ms
+[Fri Nov 22 2019 21:21:52 GMT+0000 (UTC)] INFO Requests: 22371, requests per second: 80, mean latency: 88.1 ms
+[Fri Nov 22 2019 21:21:57 GMT+0000 (UTC)] INFO Requests: 22771, requests per second: 80, mean latency: 90.6 ms
+[Fri Nov 22 2019 21:22:02 GMT+0000 (UTC)] INFO Requests: 23171, requests per second: 80, mean latency: 91 ms
+[Fri Nov 22 2019 21:22:07 GMT+0000 (UTC)] INFO Requests: 23571, requests per second: 80, mean latency: 91 ms
+[Fri Nov 22 2019 21:22:12 GMT+0000 (UTC)] INFO Requests: 23971, requests per second: 80, mean latency: 88.6 ms
+[Fri Nov 22 2019 21:22:17 GMT+0000 (UTC)] INFO Requests: 24371, requests per second: 80, mean latency: 88.8 ms
+[Fri Nov 22 2019 21:22:22 GMT+0000 (UTC)] INFO Requests: 24771, requests per second: 80, mean latency: 89.1 ms
+[Fri Nov 22 2019 21:22:27 GMT+0000 (UTC)] INFO Requests: 25171, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:22:32 GMT+0000 (UTC)] INFO Requests: 25571, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:22:37 GMT+0000 (UTC)] INFO Requests: 25971, requests per second: 80, mean latency: 88.6 ms
+[Fri Nov 22 2019 21:22:42 GMT+0000 (UTC)] INFO Requests: 26371, requests per second: 80, mean latency: 86.5 ms
+[Fri Nov 22 2019 21:22:47 GMT+0000 (UTC)] INFO Requests: 26772, requests per second: 80, mean latency: 86.4 ms
+[Fri Nov 22 2019 21:22:52 GMT+0000 (UTC)] INFO Requests: 27172, requests per second: 80, mean latency: 86.4 ms
+[Fri Nov 22 2019 21:22:57 GMT+0000 (UTC)] INFO Requests: 27571, requests per second: 80, mean latency: 87.2 ms
+[Fri Nov 22 2019 21:23:02 GMT+0000 (UTC)] INFO Requests: 27972, requests per second: 80, mean latency: 88.8 ms
+[Fri Nov 22 2019 21:23:07 GMT+0000 (UTC)] INFO Requests: 28371, requests per second: 80, mean latency: 89.2 ms
+[Fri Nov 22 2019 21:23:12 GMT+0000 (UTC)] INFO Requests: 28772, requests per second: 80, mean latency: 87.6 ms
+[Fri Nov 22 2019 21:23:17 GMT+0000 (UTC)] INFO Requests: 29171, requests per second: 80, mean latency: 87.7 ms
+[Fri Nov 22 2019 21:23:22 GMT+0000 (UTC)] INFO Requests: 29571, requests per second: 80, mean latency: 87.8 ms
+[Fri Nov 22 2019 21:23:27 GMT+0000 (UTC)] INFO Requests: 29971, requests per second: 80, mean latency: 87.9 ms
+[Fri Nov 22 2019 21:23:32 GMT+0000 (UTC)] INFO Requests: 30372, requests per second: 80, mean latency: 90 ms
+[Fri Nov 22 2019 21:23:37 GMT+0000 (UTC)] INFO Requests: 30771, requests per second: 80, mean latency: 94.4 ms
+[Fri Nov 22 2019 21:23:42 GMT+0000 (UTC)] INFO Requests: 31171, requests per second: 80, mean latency: 91.4 ms
+[Fri Nov 22 2019 21:23:47 GMT+0000 (UTC)] INFO Requests: 31571, requests per second: 80, mean latency: 89 ms
+[Fri Nov 22 2019 21:23:52 GMT+0000 (UTC)] INFO Requests: 31971, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:23:57 GMT+0000 (UTC)] INFO Requests: 32371, requests per second: 80, mean latency: 88.8 ms
+[Fri Nov 22 2019 21:24:02 GMT+0000 (UTC)] INFO Requests: 32771, requests per second: 80, mean latency: 89.6 ms
+[Fri Nov 22 2019 21:24:07 GMT+0000 (UTC)] INFO Requests: 33171, requests per second: 80, mean latency: 90.9 ms
+[Fri Nov 22 2019 21:24:12 GMT+0000 (UTC)] INFO Requests: 33571, requests per second: 80, mean latency: 90.4 ms
+[Fri Nov 22 2019 21:24:17 GMT+0000 (UTC)] INFO Requests: 33971, requests per second: 80, mean latency: 90.3 ms
+[Fri Nov 22 2019 21:24:22 GMT+0000 (UTC)] INFO Requests: 34371, requests per second: 80, mean latency: 88.4 ms
+[Fri Nov 22 2019 21:24:27 GMT+0000 (UTC)] INFO Requests: 34771, requests per second: 80, mean latency: 89.5 ms
+[Fri Nov 22 2019 21:24:32 GMT+0000 (UTC)] INFO Requests: 35171, requests per second: 80, mean latency: 90.9 ms
+[Fri Nov 22 2019 21:24:37 GMT+0000 (UTC)] INFO Requests: 35571, requests per second: 80, mean latency: 91.1 ms
+[Fri Nov 22 2019 21:24:42 GMT+0000 (UTC)] INFO Requests: 35971, requests per second: 80, mean latency: 89.2 ms
+[Fri Nov 22 2019 21:24:47 GMT+0000 (UTC)] INFO Requests: 36371, requests per second: 80, mean latency: 87.7 ms
+[Fri Nov 22 2019 21:24:52 GMT+0000 (UTC)] INFO Requests: 36771, requests per second: 80, mean latency: 86.3 ms
+[Fri Nov 22 2019 21:24:57 GMT+0000 (UTC)] INFO Requests: 37171, requests per second: 80, mean latency: 88.1 ms
+[Fri Nov 22 2019 21:25:02 GMT+0000 (UTC)] INFO Requests: 37571, requests per second: 80, mean latency: 91.1 ms
+[Fri Nov 22 2019 21:25:07 GMT+0000 (UTC)] INFO Requests: 37971, requests per second: 80, mean latency: 93.2 ms
+[Fri Nov 22 2019 21:25:12 GMT+0000 (UTC)] INFO Requests: 38371, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:25:17 GMT+0000 (UTC)] INFO Requests: 38772, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:25:22 GMT+0000 (UTC)] INFO Requests: 39171, requests per second: 80, mean latency: 88.1 ms
+[Fri Nov 22 2019 21:25:27 GMT+0000 (UTC)] INFO Requests: 39571, requests per second: 80, mean latency: 89.3 ms
+[Fri Nov 22 2019 21:25:32 GMT+0000 (UTC)] INFO Requests: 39971, requests per second: 80, mean latency: 90.2 ms
+[Fri Nov 22 2019 21:25:37 GMT+0000 (UTC)] INFO Requests: 40371, requests per second: 80, mean latency: 89.4 ms
+[Fri Nov 22 2019 21:25:42 GMT+0000 (UTC)] INFO Requests: 40771, requests per second: 80, mean latency: 87.8 ms
+[Fri Nov 22 2019 21:25:47 GMT+0000 (UTC)] INFO Requests: 41172, requests per second: 80, mean latency: 87.9 ms
+[Fri Nov 22 2019 21:25:52 GMT+0000 (UTC)] INFO Requests: 41571, requests per second: 80, mean latency: 88.3 ms
+[Fri Nov 22 2019 21:25:57 GMT+0000 (UTC)] INFO Requests: 41971, requests per second: 80, mean latency: 88.9 ms
+[Fri Nov 22 2019 21:26:02 GMT+0000 (UTC)] INFO Requests: 42371, requests per second: 80, mean latency: 88.8 ms
+[Fri Nov 22 2019 21:26:07 GMT+0000 (UTC)] INFO Requests: 42771, requests per second: 80, mean latency: 89.9 ms
+[Fri Nov 22 2019 21:26:12 GMT+0000 (UTC)] INFO Requests: 43171, requests per second: 80, mean latency: 88.1 ms
+[Fri Nov 22 2019 21:26:17 GMT+0000 (UTC)] INFO Requests: 43571, requests per second: 80, mean latency: 90.4 ms
+[Fri Nov 22 2019 21:26:22 GMT+0000 (UTC)] INFO Requests: 43971, requests per second: 80, mean latency: 91.1 ms
+[Fri Nov 22 2019 21:26:27 GMT+0000 (UTC)] INFO Requests: 44371, requests per second: 80, mean latency: 90 ms
+[Fri Nov 22 2019 21:26:32 GMT+0000 (UTC)] INFO Requests: 44771, requests per second: 80, mean latency: 89.9 ms
+[Fri Nov 22 2019 21:26:37 GMT+0000 (UTC)] INFO Requests: 45171, requests per second: 80, mean latency: 88.2 ms
+[Fri Nov 22 2019 21:26:42 GMT+0000 (UTC)] INFO Requests: 45571, requests per second: 80, mean latency: 88.8 ms
+[Fri Nov 22 2019 21:26:47 GMT+0000 (UTC)] INFO Requests: 45971, requests per second: 80, mean latency: 88.7 ms
+[Fri Nov 22 2019 21:26:52 GMT+0000 (UTC)] INFO Requests: 46371, requests per second: 80, mean latency: 89.9 ms
+[Fri Nov 22 2019 21:26:57 GMT+0000 (UTC)] INFO Requests: 46772, requests per second: 80, mean latency: 89.2 ms
+[Fri Nov 22 2019 21:27:02 GMT+0000 (UTC)] INFO Requests: 47172, requests per second: 80, mean latency: 88 ms
+[Fri Nov 22 2019 21:27:07 GMT+0000 (UTC)] INFO Requests: 47572, requests per second: 80, mean latency: 89 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO 
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Target URL:          http://127.0.0.1/blog/
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Max time (s):        600
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Concurrency level:   8
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Agent:               none
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Requests per second: 80
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO 
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Completed requests:  47971
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Total errors:        0
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Total time:          600.002760949 s
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Requests per second: 80
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Mean latency:        89.1 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO 
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO Percentage of the requests served within a certain time
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO   50%      87 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO   90%      98 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO   95%      102 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO   99%      111 ms
+[Fri Nov 22 2019 21:27:12 GMT+0000 (UTC)] INFO  100%      209 ms (longest request)

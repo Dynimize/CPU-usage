@@ -1,0 +1,22 @@
+#!/bin/bash
+pathToLuas="/usr/share/sysbench/"
+dbName=sbTest
+tableSize=30000000
+numTables=10
+user=root
+
+service mysql restart
+
+mysql -u $user -e "DROP DATABASE $dbName;"
+mysql -u $user -e "CREATE DATABASE $dbName;"
+
+sysbench $pathToLuas/oltp_point_select.lua \
+  		--num-threads=16 \
+                --table-size=$tableSize \
+                --tables=$numTables \
+                --mysql-db=$dbName \
+                --mysql-user=$user \
+                --mysql-password='' \
+                --db-driver=mysql \
+                prepare
+

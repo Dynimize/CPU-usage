@@ -1,0 +1,120 @@
++ scale=100
++ numTables=10
++ dbName=tpcc
++ user=root
++ measureTime=1800
++ reportInterval=10
++ dyniWarmupTime=180
++ threads=56
++ marginTime=15
++ warmupTime=1800
++ rate=7500
++ restTime=10
++ dataDir=/var/lib/mysql
++ results=./results/
++ backup=/mnt/drive/mysql.setup
++ nvme=/mnt/drive/mysql
++ variant=mariadb
++ measureTime=1830
++ dyni -stop
+Dynimize shutting down
++ mkdir -p ./results/
++ runAndPlot
++ echo RUN WITH DYNIMIZE
+RUN WITH DYNIMIZE
++ copyDataRestart
++ service mariadb stop
++ rm -rf /mnt/drive/mysql
++ cp -r /mnt/drive/mysql.setup /mnt/drive/mysql
++ chown -R mysql:mysql /mnt/drive/mysql
++ service mariadb start
++ warmup 1800
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is not running
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=1800 --threads=56 --report-interval=10 --tables=10 --scale=100 --db-driver=mysql run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is not running
++ dyni -start
+Dynimize started
++ warmupRate 180
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is running
+mysqld, pid: 2548, profiling
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=180 --rate=7500 --threads=56 --report-interval=10 --tables=10 --scale=100 --db-driver=mysql run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is running
+mysqld, pid: 2548, dynimizing
++ dyni -stop
+Dynimize shutting down
++ run dyni
++ prefix=dyni-tpcc
++ topLog=./results/dyni-tpcc-top.log
++ sysbenchLog=./results/dyni-tpcc.log
++ cpuUsageCsv=./results/dyni-tpcc.csv
++ sleep 5
++ timeout 1830 top -b -d 1
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=1830 --threads=56 --report-interval=10 --tables=10 --scale=100 --rate=7500 --db-driver=mysql run
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/dyni-tpcc-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/dyni-tpcc-top.log
++ sleep 10
++ echo RUN WITHOUT DYNIMIZE
+RUN WITHOUT DYNIMIZE
++ copyDataRestart
++ service mariadb stop
++ rm -rf /mnt/drive/mysql
++ cp -r /mnt/drive/mysql.setup /mnt/drive/mysql
++ chown -R mysql:mysql /mnt/drive/mysql
++ service mariadb start
++ warmup 1800
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is not running
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=1800 --threads=56 --report-interval=10 --tables=10 --scale=100 --db-driver=mysql run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is not running
++ warmupRate 180
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is not running
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=180 --rate=7500 --threads=56 --report-interval=10 --tables=10 --scale=100 --db-driver=mysql run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is not running
++ run noDyni
++ prefix=noDyni-tpcc
++ topLog=./results/noDyni-tpcc-top.log
++ sysbenchLog=./results/noDyni-tpcc.log
++ cpuUsageCsv=./results/noDyni-tpcc.csv
++ sleep 5
++ timeout 1830 top -b -d 1
++ ./tpcc.lua --mysql-user=root --mysql-db=tpcc --time=1830 --threads=56 --report-interval=10 --tables=10 --scale=100 --rate=7500 --db-driver=mysql run
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/noDyni-tpcc-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/noDyni-tpcc-top.log
++ sleep 10
++ echo FINISHED
+FINISHED

@@ -1,0 +1,102 @@
++ tableSize=30000000
++ numTables=10
++ dbName=sbTest
++ user=root
++ measureTime=1800
++ marginTime=15
++ warmupTime=1800
++ restTime=10
++ paretoH=1
++ pathToLuas=/usr/share/sysbench
++ dataDir=/var/lib/mysql
++ results=./results/
++ backup=/var/lib/mysql.setup
++ oltp_point_select_test=/usr/share/sysbench/oltp_point_select.lua
++ measureTime=1830
++ dyni -stop
+Dynimize shutting down
++ mkdir -p ./results/
++ runAndPlot /usr/share/sysbench/oltp_point_select.lua oltp_point_select
++ test=/usr/share/sysbench/oltp_point_select.lua
++ name=oltp_point_select
++ echo RUN WITH DYNIMIZE
+RUN WITH DYNIMIZE
++ copyDataRestart
++ service mysql stop
++ rm -rf /var/lib/mysql
++ cp -r /var/lib/mysql.setup /var/lib/mysql
++ chown -R mysql:mysql /var/lib/mysql
++ service mysql start
++ dyni -start
+Dynimize started
++ run dyni /usr/share/sysbench/oltp_point_select.lua oltp_point_select
++ name=oltp_point_select
++ test=/usr/share/sysbench/oltp_point_select.lua
++ prefix=dyni-oltp_point_select
++ topLog=./results/dyni-oltp_point_select-top.log
++ sysbenchLog=./results/dyni-oltp_point_select.log
++ cpuUsageCsv=./results/dyni-oltp_point_select.csv
++ warmup
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is running
++ sysbench /usr/share/sysbench/oltp_point_select.lua --table-size=30000000 --tables=10 --mysql-db=sbTest --mysql-user=root --mysql-password= --time=1800 --threads=16 --rand-type=pareto --rand-pareto-h=1 --db-driver=mysql --report-interval=10 --max-requests=0 run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is running
+mysqld, pid: 3170, dynimized
++ dyni -stop
+Dynimize shutting down
++ sleep 5
++ timeout 1830 top -b -d 1
++ sysbench /usr/share/sysbench/oltp_point_select.lua --table-size=30000000 --tables=10 --mysql-db=sbTest --mysql-user=root --mysql-password= --time=1830 --threads=16 --rand-type=pareto --rand-pareto-h=1 --db-driver=mysql --rate=25000 --report-interval=100 --max-requests=0 run
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/dyni-oltp_point_select-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/dyni-oltp_point_select-top.log
++ dyni -stop
+Dynimize is not running
++ sleep 10
++ echo RUN WITHOUT DYNIMIZE
+RUN WITHOUT DYNIMIZE
++ copyDataRestart
++ service mysql stop
++ rm -rf /var/lib/mysql
++ cp -r /var/lib/mysql.setup /var/lib/mysql
++ chown -R mysql:mysql /var/lib/mysql
++ service mysql start
++ run noDyni /usr/share/sysbench/oltp_point_select.lua oltp_point_select
++ name=oltp_point_select
++ test=/usr/share/sysbench/oltp_point_select.lua
++ prefix=noDyni-oltp_point_select
++ topLog=./results/noDyni-oltp_point_select-top.log
++ sysbenchLog=./results/noDyni-oltp_point_select.log
++ cpuUsageCsv=./results/noDyni-oltp_point_select.csv
++ warmup
++ echo Performing warmup...
+Performing warmup...
++ sleep 2
++ dyni -status
+Dynimize is not running
++ sysbench /usr/share/sysbench/oltp_point_select.lua --table-size=30000000 --tables=10 --mysql-db=sbTest --mysql-user=root --mysql-password= --time=1800 --threads=16 --rand-type=pareto --rand-pareto-h=1 --db-driver=mysql --report-interval=10 --max-requests=0 run
++ echo Warmup complete
+Warmup complete
++ dyni -status
+Dynimize is not running
++ dyni -stop
+Dynimize is not running
++ sleep 5
++ timeout 1830 top -b -d 1
++ sysbench /usr/share/sysbench/oltp_point_select.lua --table-size=30000000 --tables=10 --mysql-db=sbTest --mysql-user=root --mysql-password= --time=1830 --threads=16 --rand-type=pareto --rand-pareto-h=1 --db-driver=mysql --rate=25000 --report-interval=100 --max-requests=0 run
++ grep --line-buffered mysqld
++ sleep 10
++ head -n -15 ./results/noDyni-oltp_point_select-top.log
++ tail -n +15 temp
++ rm temp
++ awk '{ print $9 }' ./results/noDyni-oltp_point_select-top.log
++ sleep 10

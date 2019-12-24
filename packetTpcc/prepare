@@ -1,0 +1,24 @@
+#!/bin/bash
+dbName=tpcc
+user=root
+numTables=10
+scale=100
+dataDir="/var/lib/mysql"
+backup="/var/lib/mysql.setup"
+
+
+service mariadb restart
+
+mysql -u $user -e "DROP DATABASE $dbName;"
+mysql -u $user -e "CREATE DATABASE $dbName;"
+
+./tpcc.lua --mysql-user=root \
+           --mysql-db=$dbName \
+           --threads=64 \
+           --report-interval=1 \
+           --tables=$numTables \
+           --scale=$scale \
+           --db-driver=mysql prepare
+
+#rm -rf $backup
+#cp -r $dataDir $backup
